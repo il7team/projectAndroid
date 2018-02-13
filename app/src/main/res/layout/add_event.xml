@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:orientation="vertical"
+        tools:context="com.bitm.alfa_travel_mate.main.AddEventActivity">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/main_toolbar"></include>
+
+        <EditText
+
+            android:id="@+id/travelDestET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/my_button_bg"
+            android:hint="Travel Destination"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/estBudgetET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/my_button_bg"
+            android:hint="Estimated Budget"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/fromDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/my_button_bg"
+            android:padding="10dp"
+            android:text="From Date"
+            android:onClick="selectfromdate"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+
+            />
+
+        <Button
+            android:id="@+id/toDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/my_button_bg"
+            android:onClick="selecttodate"
+            android:padding="10dp"
+            android:text="To date"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/saveEventBtn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/border_button"
+            android:gravity="center"
+            android:text="Save Event"
+            android:textColor="@color/textcolor"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+</layout>
+
+

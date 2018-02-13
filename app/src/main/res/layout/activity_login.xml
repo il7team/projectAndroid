@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+        android:background="@drawable/background"
+        tools:context="com.bitm.travelmate.LoginActivity">
+
+        <include layout="@layout/main_toolbar" android:id="@+id/toolbar"> </include>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:padding="10dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/app_text_logo" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="8"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email :"
+                    android:textSize="15sp"
+                    android:textColor="@color/textcolor"
+                    android:padding="5dp"/>
+                <EditText
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/email_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/my_button_bg"
+                    android:inputType="textEmailAddress"
+                    android:hint="ex: mostafa@gmail.com"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Password :"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/textcolor"
+                    android:padding="5dp"/>
+                <EditText
+                    android:id="@+id/password_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:textSize="15sp"
+                    android:padding="10dp"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/my_button_bg"
+                    android:inputType="numberPassword"
+                    android:hint="******"
+                    />
+                <Button
+                    android:layout_marginTop="25dp"
+                    android:layout_width="100dp"
+                    android:gravity="center"
+                    android:id="@+id/signin_btn"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/textcolor"
+                    android:background="@drawable/border_button"
+                    android:text="sign in"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/textcolor"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:id="@+id/signup_tv"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Not registerd?? SIGN UP"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <Button
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:padding="10dp"
+                    android:textColor="@color/textcolor"
+                    android:textSize="14sp"
+                    android:id="@+id/weather_btn"
+                    android:text="Check Weather"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/my_button_bg"
+                    android:layout_height="match_parent">
+
+                </Button>
+                <Button
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:padding="10dp"
+                    android:textColor="@color/textcolor"
+                    android:textSize="14sp"
+                    android:id="@+id/nearby_btn"
+                    android:text="Nearby places"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/my_button_bg"
+                    android:layout_height="match_parent">
+
+                </Button>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</layout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background"
+            android:orientation="vertical"
+            tools:context="com.bitm.travelmate.RegisterActivity">
+
+            <include
+                android:id="@id/toolbar"
+                layout="@layout/main_toolbar"></include>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Full Name :"
+                    android:textColor="@color/textcolor"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/full_name_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/my_button_bg"
+                    android:hint="ex: Mr. John"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:text="Email :"
+                    android:textColor="@color/textcolor"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/email_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/my_button_bg"
+                    android:hint="ex: john@gmail.com"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"></EditText>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Password :"
+                    android:textColor="@color/textcolor"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/password_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/my_button_bg"
+                    android:hint="******"
+                    android:inputType="numberPassword"
+                    android:padding="10dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:text="Confirm Password :"
+                    android:textColor="@color/textcolor"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/confirm_password_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/my_button_bg"
+                    android:hint="******"
+                    android:inputType="numberPassword"
+                    android:padding="10dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/signup_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/border_button"
+                    android:gravity="center"
+                    android:text="Sign up"
+                    android:textColor="@color/textcolor"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+</layout>

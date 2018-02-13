@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:context="com.bitm.alfa_travel_mate.Weather.WeatherActivity"
+    android:id="@+id/main_layout">
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifbackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/dusty_background"
+        android:scaleType="fitXY"/>
+
+    <include layout="@layout/weather_toolbar" android:id="@+id/toolbar"></include>
+
+    <LinearLayout
+        android:layout_below="@id/toolbar"
+        android:background="@android:color/transparent"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/appbarlayout"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/ProgramsTabLayout"
+                    android:background="#77333333"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:tabGravity="fill"
+                    app:tabIndicatorColor="#ffffff"
+                    app:tabIndicatorHeight="3dp"
+                    app:tabMode="fixed"
+                    app:tabTextColor="#aaaaaa"
+                    app:tabSelectedTextColor="#ffffff">
+
+                </android.support.design.widget.TabLayout>
+
+                <android.support.v4.view.ViewPager
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/ProgramsViewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                </android.support.v4.view.ViewPager>
+
+            </android.support.design.widget.AppBarLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    >
+
+    <include layout="@layout/main_toolbar" android:id="@id/toolbar"></include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+
+        <LinearLayout
+            android:layout_marginTop="25dp"
+            android:background="@drawable/my_button_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/dateTv"
+                android:layout_width="0dp"
+                android:textSize="20sp"
+                android:textColor="@color/textcolor"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:hint="date"
+                />
+            <TextView
+                android:textSize="20sp"
+                android:id="@+id/timeTv"
+                android:textColor="@color/textcolor"
+                android:layout_width="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:hint="time"
+                />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/detailsEt"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:textColor="@color/textcolor"
+            android:layout_height="wrap_content"
+            android:hint="Details"
+            android:background="@drawable/my_button_bg"
+            android:textSize="20dp"
+            android:padding="10dp"
+
+            />
+        <EditText
+            android:id="@+id/amountEt"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:textSize="20dp"
+            android:textColor="@color/textcolor"
+            android:background="@drawable/my_button_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="amount"
+
+            />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_weight="1"
+                android:padding="20dp"
+                android:layout_margin="3dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Save"
+                android:textAllCaps="false"
+                android:textColor="@color/textcolor"
+                android:background="@drawable/border_button"
+
+                />
+            <Button
+
+                android:id="@+id/btn_delete"
+                android:padding="20dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:layout_margin="3dp"
+                android:textAllCaps="false"
+                android:textColor="@color/textcolor"
+                android:background="@drawable/border_button"
+
+                />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

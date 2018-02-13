@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#44000000"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:context="com.bitm.alfa_travel_mate.main.AddEventActivity">
+
+    <ImageView
+        android:layout_gravity="right"
+        android:layout_width="47dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="40dp"
+        android:tint="#fff"
+        android:id="@+id/cancel_button"
+        android:scaleType="centerInside"
+        android:src="@drawable/closeicon"/>
+        <EditText
+            android:id="@+id/travelDestET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/my_button_bg"
+            android:hint="Travel Destination"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/estBudgetET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/my_button_bg"
+            android:hint="Estimated Budget"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/fromDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/my_button_bg"
+            android:padding="10dp"
+            android:text="From Date"
+            android:onClick="selectfromdate"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+
+            />
+
+        <Button
+            android:id="@+id/toDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/my_button_bg"
+            android:onClick="selecttodate"
+            android:padding="10dp"
+            android:text="To date"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/updateEventBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/border_button"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Update Event"
+            android:textColor="@color/textcolor"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/search_location"
+        android:icon="@drawable/search_place_icon"
+        android:title="search place"
+        android:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always">option3
+    </item>
+
+    <item
+        android:id="@+id/current_place"
+        android:icon="@drawable/gps_icon"
+        android:title="current place"
+        app:showAsAction="always">option2
+    </item>
+
+
+
+
+</menu>

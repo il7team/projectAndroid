@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_marginBottom="4dp"
+    android:id="@+id/forecast_recycler_view_single_row"
+    >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_margin="1dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/content_background_color"
+            android:layout_margin="0.2dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:src="@drawable/high_temp_icon"
+                android:layout_height="40dp" />
+            <TextView
+                android:id="@+id/high_temp_tv"
+                android:layout_width="0dp"
+                android:text="56 c"
+                android:layout_margin="0.2dp"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="0.2dp"
+            android:background="@color/content_background_color"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="40dp"
+                android:src="@drawable/low_temp_icon"
+                android:layout_height="40dp" />
+            <TextView
+                android:id="@+id/low_temp_tv"
+                android:layout_margin="0.2dp"
+                android:layout_width="0dp"
+                android:text="56 c"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/condition_tv"
+            android:background="@color/content_background_color"
+            android:layout_margin="0.2dp"
+            android:layout_width="match_parent"
+            android:text="sunny"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_margin="1dp"
+        android:background="@color/content_background_color"
+        android:layout_height="match_parent">
+
+        <pl.droidsonroids.gif.GifImageView
+
+            android:id="@+id/imageView_condition"
+            android:layout_width="match_parent"
+            android:scaleType="center"
+            android:layout_height="match_parent"
+            android:src="@drawable/cloudy_condition"/>
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_margin="1dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:background="@color/content_background_color"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:src="@drawable/humidity_icon"
+                android:layout_height="40dp" />
+            <TextView
+                android:id="@+id/humidity_tv"
+                android:layout_width="0dp"
+                android:layout_margin="0.2dp"
+                android:text=" 44"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:textSize="20dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/date_tv"
+            android:background="@color/content_background_color"
+            android:layout_width="match_parent"
+            android:layout_margin="0.2dp"
+            android:layout_height="0dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:text="3rd june 2017"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/day_tv"
+            android:background="@color/content_background_color"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textStyle="bold"
+            android:layout_margin="0.2dp"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:text="monday"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>
